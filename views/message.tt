@@ -1,0 +1,11 @@
+    <div class="row">
+        <div class="col_12 last">
+            <h4>
+                [% IF success %]<img src="/img/icons/success.png" class="status" />[% END %]
+                [% IF warning %]<img src="/img/icons/warning.png" class="status" />[% END %]
+                [% IF failure %]<img src="/img/icons/failure.png" class="status" />[% END %]
+                [% message %]
+            </h4>
+        </div>
+    </div>
+    [% IF homelink %]<a href="/">Return home</a>[% END %]

@@ -1,0 +1,18 @@
+Hello,
+
+Someone, hopefully you, registered an account for [% user.login %] at
+[% url %].
+
+If this was not you, simply ignore this email and the account will be
+deleted within 24 hours.
+
+If you would like to activate this account, please click the following
+link:
+
+<[% activate_url %]>
+
+[% activate_url %]
+
+Thanks,
+
+[% site_admin %] <[% admin_mail %]>

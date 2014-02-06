@@ -1,0 +1,44 @@
+    [% INCLUDE bookmarks_form.tt %]
+
+    <div class="row">
+        <div class="col_12 last">
+            <h4>Bookmarks</h4>
+        </div>
+    </div>
+
+    [% FOREACH bookmark IN bookmarks %]
+
+        <div class="row">
+            <div class="col_12 last">
+                <a href="[% url_encode(bookmark.url) %]" class="bookmark">
+                    [% IF bookmark.title %]
+                        [% encode_entities(bookmark.title) %]
+                    [% ELSE %]
+                        [% encode_entities(bookmark.url) %]
+                    [% END %]
+                </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col_12 last">
+                <p>[% newline_to_br(encode_entities(bookmark.description)) %] </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col_12 last">
+                <p>Tags :
+                [% FOREACH tag IN bookmark.tags %]
+                    <a href="/tag/[% url_encode(tag.name) %]" class="bookmark">
+                        [% encode_entities(tag.name) %]
+                    </a>&nbsp;
+                [% END %]
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col_12 last">
+                <hr />
+            </div>
+        </div>
+    [% END %]
+

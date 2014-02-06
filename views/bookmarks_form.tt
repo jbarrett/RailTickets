@@ -1,0 +1,50 @@
+
+    [% IF user %]
+        <script type="text/javascript" src="/js/tags_autocomplete.js"></script>
+        <div class="row">
+            <div class="col_12 last">
+                <h4>Add bookmark</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <form action='/bookmarks' method='post'>
+                <div class="row">
+                    <div class="col_3">url:</div>
+                    <div class="col_3"><input type='text' name='url' class='bookmark' value='[% url %]'></div>
+                    <div class="col_6 last err"></div>
+                </div>
+                <div class="row">
+                    <div class="col_3">title:</div>
+                    <div class="col_3"><input type='text' name='title' class='bookmark'></div>
+                    <div class="col_6 last err"></div>
+                </div>
+                <div class="row">
+                    <div class="col_3">description:</div>
+                    <div class="col_3"><textarea name='description' class='bookmark'></textarea></div>
+                    <div class="col_6 last err"></div>
+                </div>
+                <div class="row">
+                    <div class="col_3">tags (comma separated):</div>
+                    <div class="col_3"><input type='text' name='tags' id='tags' class='bookmark'></div>
+                    <div class="col_6 last err"></div>
+                </div>
+                <div class="row">
+                    <div class="col_3">
+                        <label><input type="checkbox" name="read" checked />I have read this</label>
+                    </div>
+                    <div class="col_3">
+                        <input type='submit' value="Add Bookmark">
+                    </div>
+                    <div class="col_6 last err"></div>
+                </div>
+                <!-- div class="row">
+                    <div class="col_12 last">
+                        <span class="a-little-space"><input type='submit' value="Add Bookmark"></span>
+                    </div>
+                </div -->
+            </form>
+        </div>
+    [% END %]
+
+

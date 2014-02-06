@@ -1,0 +1,70 @@
+
+input.login {
+    margin:0;
+    padding:0;
+    outline:none;
+    font-family:inherit;
+    box-sizing:border-box;
+    width: 90%;
+}
+
+input.reg {
+    width: 80%;
+}
+
+input.bookmark, textarea.bookmark {
+    width: 100%;
+}
+
+.a-little-space {
+    box-sizing: border-box;
+    margin-top: 15px;
+    margin-top: 15px;
+}
+
+h1.title {
+    margin: 0;
+    margin-top: 5px;
+    margin-left : 5px;
+}
+
+p.title {
+    margin: 0;
+    margin-left : 5px;
+    margin-bottom : 2px;
+}
+
+div.title {
+    background-color: #4284D3;
+    color: white;
+    overflow: hidden;
+}
+
+img.status {
+    float: left;
+}
+
+div.err {
+    background-color: #F8E0E6;
+}
+
+a { color: black; }
+a:visited { color: #04346C; }
+a:hover { color: #4284D3; }
+a:focus { outline:1px dotted #4284D3; }
+
+a.homelink { color: white; text-decoration: none; }
+a.homelink:visited { color: white; text-decoration: none; }
+a.homelink:hover   { color: white; text-decoration: none; }
+a.homelink:focus   { color: white; dotted }
+
+a.title { color: white; text-decoration: underline; }
+a.title:visited { color: white; text-decoration: underline; }
+a.title:hover   { color: white; text-decoration: underline; }
+a.title:focus   { color: white; dotted }
+
+.autocomplete-suggestions { font-size: 95%; border: 1px solid #999; background: #fff; cursor: default; overflow: auto; }
+.autocomplete-suggestion { padding: 2px 5px; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #f0f0f0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #4284D3; }
+

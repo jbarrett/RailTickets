@@ -1,0 +1,41 @@
+        <div class="row">
+            <h4>Register</h4>
+        </div>
+        <div class="row">
+            <form action='/register' method='post'>
+
+                <div class="row">
+                    <div class="col_2">login:</div>
+                    <div class="col_3"><input type='text' name='login' class='reg' value='[% encode_entities(login) %]'></div>
+                    <div class="col_7 last err">[% err_login %]</div>
+                </div>
+                <div class="row">
+                    <div class="col_2">email:</div>
+                    <div class="col_3"><input type='text' name='email' class='reg' value='[% encode_entities(email) %]'></div>
+                    <div class="col_7 last err">[% err_email %]</div>
+                </div>
+                <div class="row">
+                    <div class="col_2">email (again):</div>
+                    <div class="col_3"><input type='text' name='email1' class='reg' value='[% encode_entities(email1) %]'></div>
+                    <div class="col_7 last err">[% err_email1 %]</div>
+                </div>
+                <div class="row">
+                    <div class="col_2">password:</div>
+                    <div class="col_3"><input type='password' name='password' class='reg'></div>
+                    <div class="col_7 last err">[% err_pwd %]</div>
+                </div>
+                <div class="row">
+                    <div class="col_2">password (again):</div>
+                    <div class="col_3"><input type='password' name='password1' class='reg'></div>
+                    <div class="col_7 last err">[% err_pwd1 %]</div>
+                </div>
+
+                <div class="row">
+                    <div class="col_12 last">
+                        <span class="a-little-space"><input type='submit' value="Register"></span>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
