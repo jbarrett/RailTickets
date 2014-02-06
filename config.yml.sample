@@ -1,0 +1,44 @@
+appname: 'RailTickets'
+tagline: 'The anti-social bookmarking website'
+
+charset:  'UTF-8'
+layout:   'main'
+template: 'template_toolkit'
+
+plugins:
+    DBIC:
+        default:
+            dsn: dbi:mysql:railtickets
+            user: railtickets
+            pass: r41lt1ck3ts
+            schema_class: RailTickets::Schema
+            options:
+                mysql_enable_utf8: 1
+                quote_char: '`'
+    Emailesque:
+        from: your_email@provider
+        # See https://metacpan.org/pod/Dancer2::Plugin::Emailesque
+
+results_per_page: 10
+
+session: 'Cookie'
+
+serializer: 'JSON'
+
+# Change the secret_key!!!
+engines:
+    session:
+        Cookie:
+            secret_key: svp3rs3kr1t
+            default_duration: 604800
+
+# Change this!
+email_secret: 3m41ls3kr1t
+
+# Change this!
+base_url: https://your_site/
+
+# Change this!
+site_admin: admin
+admin_mail: admin@your_site
+
